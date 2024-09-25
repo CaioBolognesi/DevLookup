@@ -1,50 +1,57 @@
-# React + TypeScript + Vite
+# **DevLookup**🔎
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DevLookup is a React application that allows users to search for GitHub profiles by entering a username. <br>
+The app fetches data from the GitHub API and displays user information such as bio, followers, and more.
 
-Currently, two official plugins are available:
+## Features
++ Search for GitHub users by username<br>
++ Display profile picture, name, bio, and other user information<br>
++ View follower and repository stats<br>
++ Navigate to the user's GitHub profile via a link<br>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Tech Stack
++ <strong>React:</strong> Front-end framework for building user interfaces.
++ <strong>Tailwind CSS:</strong> Utility-first CSS framework for fast styling.
++ <strong>React Query:</strong> Library for fetching, caching, and updating server data.
++ <strong>Vite:</strong> Build tool for front-end development with lightning-fast dev server.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+# Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. _Clone the repository:_
+```
+git clone https://github.com/yourusername/devlookup.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. _Navigate to the project folder:_
 ```
+cd devlookup
+```
+
+3. _Install dependencies:_
+```
+npm install
+```
+
+4. _Start the development server:_
+```
+npm run dev
+```
+
+
+## Usage
++ Enter a GitHub username into the search input field and click the Search button.
++ The app will display the user's profile picture, bio, and relevant stats if the username exists.
++ If no user is found, an error message will be displayed.
++ You can view the full profile on GitHub by clicking the View Profile button.
+
+## Dependencies
++ @tanstack/react-query: For managing API requests and caching.
++ lucide-react: For adding icons to the interface.
++ tailwindcss: For styling the UI components.
+
+<br>
+
+> [!NOTE]
+> This project is licensed under the MIT License. See the LICENSE file for details.
