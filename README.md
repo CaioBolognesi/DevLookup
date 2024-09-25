@@ -1,4 +1,5 @@
 # **DevLookup**🔎
+![Untitled ‑ Made with FlexClip](https://github.com/user-attachments/assets/3a33d57c-bbc5-426c-b85b-2f5b81075560)
 
 DevLookup is a React application that allows users to search for GitHub profiles by entering a username. <br>
 The app fetches data from the GitHub API and displays user information such as bio, followers, and more.
